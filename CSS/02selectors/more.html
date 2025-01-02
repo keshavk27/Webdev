@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        .box:first-child {
+            background-color: aquamarine;
+        }
+        .box:nth-child(2)::first-line{
+            color:brown
+        }
+        .boxes *{
+            border: 2px solid black;
+            padding: 1px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">I am a box</div>
+        <div class="box">I am a box: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam perspiciatis
+            praesentium ipsa voluptatum iste facere corporis vero, quod blanditiis animi ratione debitis ex cumque
+            eveniet. Rem est quia veritatis cumque ut adipisci quisquam nostrum, eius amet minima mollitia repudiandae
+            sequi quos, atque ducimus, libero tempore similique. Accusantium culpa facilis nobis aliquam explicabo
+            deleniti! Similique enim eius sint molestias voluptatibus voluptas laboriosam, provident unde atque
+            voluptatum quasi magni, dolores magnam commodi! Neque, aspernatur sit. Explicabo, vero. Harum voluptate
+            excepturi, magnam vel quis, sint quidem corrupti aspernatur officiis natus pariatur repellendus,
+            perspiciatis sed accusamus error. Nobis iste quae numquam deserunt sit?</div>
+        <div class="box">I am a box</div>
+    </div>
+
+
+</body>
+
+</html>

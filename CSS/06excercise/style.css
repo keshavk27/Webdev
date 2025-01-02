@@ -1,0 +1,14 @@
+p{
+    background-color: blue;
+    color: beige;
+}
+
+div p:first-child{
+    background-color: yellow;
+    color: brown;
+}
+
+/* div p:nth-child(1){
+    background-color: yellow;
+    color: brown;
+} */                  /*use of nth child concept*/

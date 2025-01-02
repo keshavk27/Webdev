@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 440px;
+            width: 540px;
+            background-color: aquamarine;
+            
+
+        }
+
+        img {
+            width: 540px;
+            height: 440px;
+            object-fit: cover;
+            /*cover krne se image crop krke uss jagah me fit kr dega*/
+            object-position: bottom left;
+            /*object-fit: contain;*/
+            /*contain krne se image ko crop nahi krega bs chota krke uss jagah me dikha dega*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg"
+            alt="image">
+
+
+    </div>
+
+
+</body>
+
+</html>

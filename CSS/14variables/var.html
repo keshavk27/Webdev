@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable</title>
+    <style>
+        :root {                   /*all global variable are declared in root tag */
+            --color: cornsilk;
+            --seccolor: bisque;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        li {
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+            font-family: sans-serif;
+            
+        }
+
+        ul {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>contact</li>
+            <li>address</li>
+        </ul>
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo vel fugiat libero ullam unde vero
+            saepe nesciunt hic perspiciatis voluptatem nostrum eligendi quas quia, quidem consequuntur totam laudantium
+            ratione expedita, obcaecati sit quis. Dolor ut debitis corporis explicabo magnam laborum maxime consequatur
+            dolores dicta!
+        </div>
+    </div>
+</body>
+
+</html>

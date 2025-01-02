@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            background-color: rgb(82, 249, 110);
+            height: 80vh;
+            width: 30vw;
+
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            margin: 5px;
+            animation-name: animation,ani2;
+            animation-duration: 3s;
+            animation-iteration-count: 6;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 1s ;
+            animation-direction: alternate-reverse ;
+            animation-fill-mode: forwards;         /*it will not retain its own property*/
+            
+
+        }
+        @keyframes animation{
+            from{
+                background-color: brown;
+
+            }
+            to{
+                transform: translateX(500px);
+                background-color: chartreuse;
+            }
+        }
+       /* @keyframes ani2{
+            0%{
+                transform: rotate(45deg);
+            }
+            20%{
+                transform: rotate(120deg);
+            }
+            50%{
+                transform: rotate(270deg);
+
+            }
+            100%{
+                transform: rotate(360deg);
+
+            }
+
+        }*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+    
+</body>
+</html>
