@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Chai or JS</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+    
+</body>
+<script>
+    const saydate=function(){
+        console.log("hi",Date.now());
+    }
+    let intId;
+
+    const startbtn=document.querySelector('#start');
+    const stopbtn=document.querySelector('#stop');
+
+    startbtn.addEventListener('click',function(e){
+        intId= setInterval(saydate,1000)
+    })
+    stopbtn.addEventListener('click',function(e){
+        clearInterval(intId)
+    })
+
+</script>
+</html>

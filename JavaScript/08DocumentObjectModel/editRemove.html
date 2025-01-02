@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom chai</title>
+</head>
+<body style="background-color: black; color:aliceblue">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //adding
+    function addlang(language)
+    {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(language))
+        document.querySelector('.language').appendChild(li)
+    }
+    addlang("python")
+    addlang("java")
+    addlang("typescript")
+
+    //removing
+    const rem=document.querySelector('li:nth-child(4)')
+    rem.remove()
+</script>
+</html>
