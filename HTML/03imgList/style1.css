@@ -1,0 +1,18 @@
+td{
+    border:2px solid black;
+    background-color: beige;
+}
+th{
+    border:2px solid black;
+    background-color: aquamarine;
+}
+caption{
+    background-color: rgb(127, 153, 255);
+}
+
+ul{
+    background-color: rgb(53, 156, 78);
+}
+ol{
+    background-color: rgb(190, 74, 74);
+}

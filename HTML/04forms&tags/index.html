@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+
+    <title>FORMS</title>
+</head>
+
+<body>
+    <h1>Form to apply for TA</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter the username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+            <div>
+            <label for="date" >enter the date</label>
+            <input type="text" id="date" name="date" placeholder="Enter date here" pattern="12-13-2004">
+            </div>
+        </div>
+
+        <div>
+            <input type="radio" id="Male" name="gender" value="male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="female">
+            <label for="Female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscirbe">Subscribe the red button</label>
+        </div>
+        <br>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea id="comment" name="comment" rows="5" cols="50" placeholder="Comment"></textarea>
+        </div>
+        <div>
+            <select name="fruits">
+                <option value="Apple">Apple</option>
+                <option value="banana">banana</option>
+                <option value="orange">orange</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

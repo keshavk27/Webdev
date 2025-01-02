@@ -1,0 +1,16 @@
+h1{
+    background-color: rgb(222, 116, 116);
+}
+
+label{
+    background-color: aquamarine;
+    text-decoration: underline;
+    font-size: large;
+    
+}
+
+input{
+    background-color: beige;
+    font-style: oblique;
+    
+}
