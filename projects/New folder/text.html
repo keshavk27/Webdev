@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Text Editor</title>
+    <link rel="stylesheet" href="texts.css">
+</head>
+<body>
+
+    <div class="editor-container">
+        <h1>Online Text Editor</h1>
+        <div class="toolbar">
+            <button onclick="formatText('bold')">Bold</button>
+            <button onclick="formatText('italic')">Italic</button>
+            <button onclick="formatText('underline')">Underline</button>
+            <button onclick="formatText('strikeThrough')">Strike</button>
+            <button onclick="clearEditor()">Clear</button>
+        </div>
+        <div contenteditable="true" id="textEditor" class="editor"></div>
+    </div>
+
+    <script src="text.js"></script>
+
+</body>
+</html>
